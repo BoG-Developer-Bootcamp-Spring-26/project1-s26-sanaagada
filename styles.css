@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.title {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 46px;
+  margin-bottom: 14px;
+}
+
+.layout {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  column-gap: 120px;
+  align-items: start;
+  padding-bottom: 40px;
+}
+
+/* LEFT */
+.left { 
+    width: 360px; 
+}
+
+.sprite-frame {
+  width: 360px;
+  height: 360px;
+  border: 3px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sprite-frame img {
+  width: 463px;
+  height: 463px;
+  image-rendering: pixelated;
+}
+
+.name-bar {
+  width: 360px;
+  margin-top: 18px;
+  background: #e9e9e9;
+  border: 1px solid #777;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 12px;
+  font-size: 28px;
+}
+
+.types-block {
+  width: 360px;
+  margin-top: 22px;
+}
+
+.types-label {
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.types-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.type-chip {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #000;
+}
+
+.arrows {
+  width: 360px;
+  margin-top: 40px;
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+
+.arrow-btn {
+  width: 173px;
+  height: 69px;
+  border-radius: 16px;
+  border: 1px solid #777;
+  background: #ededed;
+  padding: 16px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-arrow {
+  width: 61px;
+  height: 61px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+.right-arrow {
+  width: 61px;
+  height: 61px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+  transform: rotate(180deg);
+}
+
+.arrow-btn:active {
+  transform: translateY(1px);
+}
+
+/* RIGHT */
+
+.right, .tabs {
+    width: 424px;
+}
+
+.panel-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.panel {
+  width: 424px;
+  height: 488px;
+  background: #e6e6e6;
+  padding: 26px 30px;
+}
+
+.panel-content {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: pre-wrap;
+}
+
+.tabs {
+  width: 424px;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  margin-top: 18px;
+}
+
+.tab-btn {
+  width: 173px;
+  height: 69px;
+  border-radius: 10px;
+  border: none;
+  background: #e6e6e6;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.tab-active {
+  background: #7CFF79;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pokedex</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Bits of Good Mid-Semester Project</h1>
+
+    <main class="layout">
+      <!-- LEFT: Pokemon card -->
+      <section class="left">
+        <div class="sprite-frame">
+          <img id="pokeSprite" alt="Pokemon sprite" />
+        </div>
+
+        <div id="pokeName" class="name-bar">loading...</div>
+
+        <div class="types-block">
+          <div class="types-label">Types:</div>
+          <div id="typesRow" class="types-row"></div>
+        </div>
+
+        <div class="arrows">
+          <button id="prevBtn" class="arrow-btn" aria-label="Previous Pokemon">
+            <img class="left-arrow" src="arrow.png" alt="Previous" />
+          </button>
+          <button id="nextBtn" class="arrow-btn" aria-label="Next Pokemon">
+            <img class="right-arrow" src="arrow.png" alt="Next" />
+          </button>
+        </div>
+      </section>
+
+      <!-- RIGHT: Panel -->
+      <section class="right">
+        <div id="panelTitle" class="panel-title">Info</div>
+
+        <div class="panel">
+          <div id="panelContent" class="panel-content"></div>
+        </div>
+
+        <div class="tabs">
+          <button id="infoTab" class="tab-btn tab-active">Info</button>
+          <button id="movesTab" class="tab-btn">Moves</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
