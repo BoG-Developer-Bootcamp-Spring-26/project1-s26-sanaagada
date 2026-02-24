@@ -143,6 +143,7 @@ body {
   height: 488px;
   background: #e6e6e6;
   padding: 26px 30px;
+  overflow-y: auto;
 }
 
 .panel-content {
@@ -158,6 +159,7 @@ body {
   justify-content: center;
   gap: 34px;
   margin-top: 18px;
+  
 }
 
 .tab-btn {
